@@ -13,32 +13,48 @@
   <body>
     <header class="primary-header">
       <div class="container">
-        <a href="#"><img src="images/logo.svg" alt=""></a>
+        <div class="nav-wrapper">
 
-        <nav class="primary-navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">products</a></li>
-            <li><a href="#">connect</a></li>
-          </ul>
-        </nav>
+            <a href="#"><img src="images/logo.svg" alt=""></a>
 
-        <button class="button">Get Started</button>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
+            <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
+            <span class="visually-hidden">Menu</span>
+          </button>
+
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="primary" role="list" class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">work</a></li>
+              <li><a href="#">my skills</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="portfolio.html">portfolio</a></li>
+            </ul>
+          </nav>
+          <button class="button | display-sm-none display-md-inline-flex">Get Started</button>
+
+        </div>
+        
       </div>
     </header>
 
     <main>
-      <section>
+      <section class="padding-block-900">
         <div class="container">
-          <div class="even-colums">
-            <div>
-              <h1 class="fs-primary-heading fw-bold"> We bring people
-                 together in ozoro.</h1>
-                 <p>we manages and make it simple for software teams to plan day-to-day life </p>
+          <div class="even-columns">
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-bold"> Hello! I'm Ifeanyi Henry.</h1>
+                 
+              <p data-width="wide">I'm a fullstack web developer based in delta state, Nigeria. I have developed 
+                many types of web-sites both font-end and back-end for well known client. <br> I am 
+                passionate about coding, also I'm focused on building accessible and human centered products.
+              </p>
 
-                 <button class="button">contact us</button>
+                 <button class="button">
+                  <a href="https://wa.me/+2349020243112" target="_blank">contact me</a>
+                 </button>
             </div>
             <div>
               <img src="images/illustration-intro.svg" alt="this is an image">
@@ -47,38 +63,38 @@
         </div>
       </section>
 
-      <section>
+      <section class="padding-block-900">
         <div class="container">
-          <div class="even-colums">
-            <div>
+          <div class="even-columns">
+            <div class="flow">
               <h2 class="fs-secondary-heading fw-bold">Why us</h2>
 
-              <p>At manage, we manage your website making it available for easy use and help you manage your website
+              <p data-width="wide">At manage, we manage your website making it available for easy use and help you manage your website
                 for easy navigation
               </p>
             </div>
 
             <div>
-              <ul class="numbered-items" role="list">
-                <li>
+              <ul class="numbered-items | flow" role="list">
+                <li class="flow" style="--flow-spacer: 1em">
                   <h3 class="fs-600 fw-bold">
                     Track customer record
                   </h3>
-                  <p> See how we manage the your website with easy and less expensive</p>
+                  <p data-width="wide"> See how we manage the your website with easy and less expensive</p>
                 </li>
 
-                <li>
+                <li class="flow" style="--flow-spacer: 1em">
                   <h3 class="fs-600 fw-bold">
                     Track customer record
                   </h3>
-                  <p> See how we manage the your website with easy and less expensive</p>
+                  <p data-width="wide"> See how we manage the your website with easy and less expensive</p>
                 </li>
 
-                <li>
+                <li class="flow" style="--flow-spacer: 1em">
                   <h3 class="fs-600 fw-bold">
                     Track customer record
                   </h3>
-                  <p> See how we manage the your website with easy and less expensive</p>
+                  <p data-width="wide"> See how we manage the your website with easy and less expensive</p>
                 </li>
               </ul>
             </div>
@@ -87,7 +103,7 @@
       </section>
 
 
-      <section class="carousel">
+      <section class="carousel | padding-block-700">
         <h2 class="fs-secondary-heading fw-bold">what others say</h2>
 
         <!-- add carousel here no forget -->
@@ -96,25 +112,28 @@
 
       </section>
 
-      <section class="cta | bg-primary-400 text-neutral-100">
+      <section class="cta | padding-block-700 bg-accent-400 text-neutral-100">
         <div class="container">
-          <div class="even-columns">
+          <div class="even-columns vertical-align-center">
             <div>
-              <p class="fs-secondary-heading fw-bold">How Our Team Works today</p>
-
-              <div>
-                <button class="button" data-type="inverted">See for yourself</button>
-              </div>
+              <p data-width="wide" class="fs-secondary-heading fw-bold">We are goal-oriented.</p>
             </div>
+
+            <div class="justify-self-end">
+              <button class="button" data-type="inverted">
+                <a href="portfolio.html">see for yourself</a>
+              </button>
+            </div>
+
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-neutral-900 text-neutral-100">
+    <footer class="bg-neutral-900 text-neutral-100 padding-block-700">
       <div class="container">
-        <div class="even-colums">
-          <div>
+        <div class="even-columns">
+          <div class="flow">
             <a href="#"> <img src="images/logo.svg" alt="logo"></a>
            <ul role="list" aria-label="Social links">
               <li><a aria-label="facebook" href=""></a></li>
@@ -127,7 +146,7 @@
 
           <div>
             <nav class="footer-nav"> 
-              <ul aria-label="footer" role="list">
+              <ul class="flow" style="--flow-spacer: 1em" aria-label="footer" role="list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Product</a></li>
@@ -141,7 +160,7 @@
             <form action="">
               <input type="email">
               <button class="button">sign up</button>
-              <p>copyright 2024. All Right Reserved.</p>
+              <p data-width="wide">copyright 2024. All Right Reserved.</p>
             </form>
           </div>
 
